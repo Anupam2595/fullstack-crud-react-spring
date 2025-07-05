@@ -195,11 +195,6 @@ export default App;
 
 ---
 
-## 📷 Screenshots (Optional)
-
-> You can add screenshots of Home Page, Add/Edit/View User Form here to make your README visual.
-
----
 
 ## 📌 Conclusion
 
