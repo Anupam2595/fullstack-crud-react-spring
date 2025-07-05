@@ -1,0 +1,71 @@
+# ========================
+# ⛔ Global Ignore
+# ========================
+HELP.md
+
+# ========================
+# 🧠 Java / Spring Boot
+# ========================
+target/
+build/
+*.log
+*.class
+*.jar
+*.war
+*.iml
+*.ipr
+*.iws
+
+# Maven wrapper
+.mvn/wrapper/maven-wrapper.jar
+
+# Spring config secrets
+application.properties
+application.yml
+.env
+
+# STS (Spring Tool Suite)
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# VS Code
+.vscode/
+
+# ========================
+# 🧠 Node / React (Frontend)
+# ========================
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+dist/
+build/
+.env.local
+.env.development
+.env.production
+.env.test
+coverage/
+
+# ========================
+# 🔁 Others (optional)
+# ========================
+.DS_Store
+Thumbs.db
