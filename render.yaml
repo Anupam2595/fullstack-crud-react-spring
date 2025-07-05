@@ -2,7 +2,7 @@ services:
   - type: web
     name: spring-backend
     env: java
-    runtime: java21
+    runtime: java
     rootDir: Backend/FullStackApplication
     buildCommand: "./mvnw clean install"
     startCommand: "java -jar target/*.jar"
