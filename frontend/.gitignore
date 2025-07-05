@@ -1,0 +1,27 @@
+# 📦 Dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# ✅ Build output (do not upload to GitHub)
+/build
+
+# 🧪 Testing
+/coverage
+
+# ⚙️ Environment variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+.env.*.local
+
+# 🧹 Miscellaneous system/IDE files
+.DS_Store
+Thumbs.db
+
+# 🐞 Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
