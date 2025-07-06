@@ -19,6 +19,8 @@ public class UserController {
 
     private final UserRepo userRepo;
 
+    //Methods for crud operation
+
     @PostMapping("/addUser")
     public ResponseEntity<String> addUser(@RequestBody User user){
         userRepo.save(user);
