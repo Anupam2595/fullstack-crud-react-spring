@@ -6,6 +6,7 @@ import { Link, Navigate } from 'react-router-dom';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
+import BASE_URL from '../api'
 
 export default function EditUser() {
 

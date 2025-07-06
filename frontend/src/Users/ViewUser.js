@@ -3,6 +3,7 @@ import { useState,useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
+import BASE_URL from '../api'
 
 export default function ViewUser() {
 const [user,setUser]=useState({})
