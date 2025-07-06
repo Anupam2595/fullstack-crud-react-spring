@@ -21,7 +21,7 @@ export default function AddUser() {
     e.preventDefault();
     console.log(formData);
     try{
-      const response=await axios.post('http://localhost:8888/addUser',formData);
+      const response=await axios.post(`${BASE_URL}/addUser`,formData);
       alert(response.data)
       setFormData({name:"",userName:"",email:""})
     }catch(error){

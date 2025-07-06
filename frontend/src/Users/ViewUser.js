@@ -14,7 +14,7 @@ const {id}=useParams();
     },[])
 
     const loadUsers=async()=>{
-       const response=await axios.get(`http://localhost:8888/user/${id}`)
+       const response=await axios.get(`${BASE_URL}/user/${id}`)
        console.log(response)
        setUser(response.data)
     }

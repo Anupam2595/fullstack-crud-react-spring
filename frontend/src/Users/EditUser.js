@@ -27,7 +27,7 @@ export default function EditUser() {
     e.preventDefault();
     console.log(formData);
     try{
-      await axios.put(`http://localhost:8888/user/${id}`,formData);
+      await axios.put(`${BASE_URL}/user/${id}`,formData);
     navigate("/");
     }catch(error){
       alert("Something Went Wrong")

@@ -2,6 +2,7 @@ import React from 'react'
 import { useState,useEffect } from 'react'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
+import BASE_URL from '../api'
 
 export default function Home() {
     const [user,setUser]=useState([])
@@ -12,7 +13,7 @@ export default function Home() {
 
     const loadUsers=async()=>{
       try{
-       const response=await axios.get('http://localhost:8888/allUsers')
+       const response=await axios.get(`${BASE_URL}/allUsers`)
        console.log(response)
        setUser(response.data)
       }catch(err){
@@ -22,7 +23,7 @@ export default function Home() {
 
     const handleDelete=async(id)=>{
       try{
-      const response=await axios.delete(`http://localhost:8888/user/${id}`);
+      const response=await axios.delete(`${BASE_URL}/user/${id}`);
       alert(response.data);
       loadUsers();
       }catch(err){
