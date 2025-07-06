@@ -14,7 +14,7 @@ import java.util.Optional;
 
 @RestController
 @RequiredArgsConstructor
-@CrossOrigin(origins= "http://localhost:3000")
+@CrossOrigin(origins= "https://fullstack-crud-react-spring.vercel.app")
 public class UserController {
 
     private final UserRepo userRepo;
